@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CHEM-BOND — Ikatan Kovalen Koordinasi</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Nunito:wght@700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="topbar">
+  <div class="brand"><span class="atom">⚛</span><div><strong>CHEM-BOND</strong><small>Media Pembelajaran Kimia</small></div></div>
+  <div class="progress-wrap"><span id="progressText">0%</span><div class="progress"><i id="progressBar"></i></div></div>
+  <nav>
+    <a href="#beranda">Beranda</a><a href="#peta">Peta</a><a href="#konsep">Konsep</a><a href="#simulasi">Simulasi</a><a href="#contoh">Contoh</a><a href="#latihan">Latihan</a><a href="#kuis">Kuis</a><a href="#ringkasan">Ringkasan</a>
+  </nav>
+</header>
+
+<main>
+<!-- SLIDE 1 -->
+<section id="beranda" class="story-slide hero-slide">
+ <div class="story-grid s1">
+  <div class="box b2"><span class="eyebrow">MEDIA PEMBELAJARAN KIMIA • INTERAKTIF</span></div>
+  <div class="box b6"><div class="brand-large"><span class="atom big">⚛</span><b>CHEM-BOND</b><small>Media Pembelajaran Kimia</small></div></div>
+  <div class="box b3"><span class="mini-label">Progress belajar</span><strong id="heroProgress">0%</strong></div>
+  <div class="box b4"><span class="mini-label">Materi</span><strong>Ikatan Kovalen Koordinasi</strong></div>
+  <div class="box b5"><h1>Ikatan Kovalen Koordinasi</h1><p>Pelajari bagaimana pasangan elektron dapat digunakan bersama melalui donor dan akseptor secara bertahap.</p></div>
+  <div class="box b7"><span>Konsep dasar</span><span>Visualisasi elektron</span><span>Simulasi bertahap</span><span>Kuis interaktif</span></div>
+  <div class="box b8"><p>Mulai dari ide sederhana, lihat asal pasangan elektron, lalu ikuti pembentukan NH₄⁺.</p></div>
+  <div class="box feature-row"><div>Konsep dasar</div><div>Visualisasi elektron</div><div>Simulasi bertahap</div><div>Kuis interaktif</div></div>
+  <div class="box b12 atom-card"><div class="electron-orbit"><span>••</span><b>N</b></div><p>Pasangan elektron bebas pada N</p></div>
+ </div>
+<div class="slide-step"><span>Langkah 1 dari 11</span><button class="next-step" onclick="goStep(2)">Lanjut ke Peta →</button></div>
+</section>
+
+<!-- SLIDE 2 -->
+<section id="peta" class="story-slide white-slide">
+ <div class="story-grid s2">
+  <div class="box b2"><span class="section-no">01</span><h2>Peta Pembelajaran</h2></div>
+  <div class="box b3"><h3>Apa yang akan kamu pelajari?</h3><p>Konsep → pemantik → visualisasi → simulasi → latihan → kuis.</p></div>
+  <div class="box b4"><h3>Capaian Pembelajaran</h3><p>Siswa dapat mengenali donor, akseptor, dan asal pasangan elektron pada ikatan kovalen koordinasi.</p></div>
+  <div class="box b5"><h3>Tujuan Pembelajaran</h3><ol><li>Menjelaskan ikatan kovalen.</li><li>Menentukan donor dan akseptor.</li><li>Menelusuri elektron valensi.</li><li>Menjelaskan NH₃ + H⁺ → NH₄⁺.</li></ol></div>
+  <div class="box b6"><h3>Cara Menggunakan</h3><ol><li>Baca konsep.</li><li>Jawab pemantik.</li><li>Ikuti simulasi.</li><li>Kerjakan latihan dan kuis.</li></ol></div>
+  <div class="box b7"><h3>Pertanyaan Awal</h3><p>Dari mana pasangan elektron itu berasal?</p></div>
+  <div class="box b8"><label>Jawaban singkatmu</label><textarea id="jawabanAwal" placeholder="Tulis jawabanmu di sini..."></textarea></div>
+ </div>
+<div class="slide-step"><span>Langkah 2 dari 11</span><button class="next-step" onclick="goStep(3)">Lanjut ke Konsep →</button></div>
+</section>
+
+<!-- SLIDE 3 -->
+<section id="konsep" class="story-slide dark-slide">
+ <div class="story-grid s3">
+  <div class="box b2"><span class="section-no">02 • KONSEP DASAR</span><h2>Mulai dari Ide Sederhana</h2></div>
+  <div class="box b3"><p>Kita mulai dari pertanyaan sederhana sebelum masuk ke notasi elektron.</p></div>
+  <div class="box b4"><button onclick="speak('Ikatan kovalen adalah ikatan ketika atom menggunakan pasangan elektron bersama.')">🔊 Dengarkan penjelasan</button></div>
+  <div class="box b5 prompt-row"><button>01<br><span>Apa itu ikatan kovalen?</span></button><button>02<br><span>Siapa yang memberi elektron?</span></button><button>03<br><span>Siapa yang menerima elektron?</span></button></div>
+  <div class="box b6"><h3>1. Ikatan Kovalen</h3><div class="lewis">A : B <span>⇄</span> A—B</div><p>Dua atom menggunakan pasangan elektron bersama.</p></div>
+  <div class="box b7 note"><strong>INGAT</strong><p>Ikatan kovalen melibatkan pasangan elektron yang digunakan bersama.</p></div>
+ </div>
+<div class="slide-step"><span>Langkah 3 dari 11</span><button class="next-step" onclick="goStep(4)">Lanjutkan Konsep →</button></div>
+</section>
+
+<!-- SLIDE 4 -->
+<section id="konsep-lanjutan" class="story-slide dark-slide">
+ <div class="story-grid s4">
+  <div class="box b1"><span class="section-no">02 • LANJUTAN KONSEP</span></div>
+  <div class="box b2"><h2>Ikatan Kovalen Koordinasi</h2><div class="donor">Donor : <span>→</span> Akseptor</div></div>
+  <div class="box b3 note"><strong>KUNCI</strong><p>Arah panah menunjukkan <b>asal pasangan elektron</b>.</p></div>
+  <div class="box b4"><h3>3. Bagaimana menentukan elektron valensi?</h3><p>Perhatikan konfigurasi elektron dan orbital atom.</p></div>
+  <div class="box b5"><h3>Konfigurasi elektron N</h3><div class="formula">1s² 2s² 2p³</div></div>
+  <div class="box b6 orbital-row"><div>1s<br><span>↑↓</span></div><div>2s<br><span>↑↓</span></div><div>2p<br><span>↑ ↑ ↑</span></div></div>
+  <div class="box b7"><p>Elektron valensi N adalah elektron pada kulit terluar. Pada NH₃, N memiliki satu pasangan elektron bebas.</p></div>
+ </div>
+<div class="slide-step"><span>Langkah 4 dari 11</span><button class="next-step" onclick="goStep(5)">Lanjut ke Audio-Visual →</button></div>
+</section>
+
+<!-- SLIDE 5 -->
+<section id="audio-visual" class="story-slide white-slide">
+ <div class="story-grid s5">
+  <div class="box b1"><h2>Belajar dengan suara dan visual</h2></div>
+  <div class="box b2"><p>Gunakan audio untuk mendengarkan penjelasan singkat sebelum melanjutkan ke simulasi.</p></div>
+  <div class="box b3"><button onclick="speak('Pada ikatan kovalen koordinasi, pasangan elektron berasal dari satu atom donor dan digunakan oleh atom akseptor.')">▶ Putar penjelasan</button></div>
+ </div>
+<div class="slide-step"><span>Langkah 5 dari 11</span><button class="next-step" onclick="goStep(6)">Mulai Simulasi →</button></div>
+</section>
+
+<!-- SLIDE 6 -->
+<section id="simulasi" class="story-slide dark-slide">
+ <div class="story-grid s6">
+  <div class="box b1"><span class="section-no">03 • SIMULASI VISUAL</span></div>
+  <div class="box b2"><h2>Dari Elektron Valensi → Ikatan</h2></div>
+  <div class="box b3"><p>Ikuti urutan NH₃ + H⁺ → NH₄⁺ untuk melihat dari mana pasangan elektron berasal.</p></div>
+  <div class="box b4"><strong id="stageLabel">Tahap 1/6</strong></div>
+  <div class="box b5 simulation">
+      <div class="sim-scene" id="simScene"></div>
+      <div class="sim-caption"><strong id="stageTitle">Konfigurasi N</strong><p id="stageText">Konfigurasi elektron N: 1s² 2s² 2p³. Lima elektron valensi berarti N memiliki satu pasangan elektron bebas setelah membentuk tiga ikatan N–H pada NH₃.</p></div>
+    </div>
+  <div class="box b6 sim-actions"><button onclick="prevStage()">Sebelumnya</button><button onclick="nextStage()">Berikutnya</button><button class="secondary" onclick="setStage(0)">Ulangi Simulasi</button></div>
+  <div class="box b7 stages" id="stages"></div>
+  <div class="box b8 challenge"><strong>TANTANGAN</strong><p id="challengeText">Apa yang terjadi pada pasangan elektron bebas N?</p></div>
+  <div class="box b9"><button onclick="speakSimulation()">🔊 Dengarkan penjelasan lengkap</button></div>
+ </div>
+<div class="slide-step"><span>Langkah 6 dari 11</span><button class="next-step" onclick="goStep(7)">Lanjut ke Video →</button></div>
+</section>
+
+<!-- SLIDE 7 -->
+<section id="contoh" class="story-slide white-slide">
+ <div class="story-grid s7">
+  <div class="box b1"><span class="section-no">04 • CONTOH & KEHIDUPAN</span></div>
+  <div class="box b2"><h2>Ikatan dalam Konteks</h2></div>
+  <div class="box b3 video-box"><video controls poster="assets/video-poster.png"><source src="assets/video_kontekstual_NH4.mp4" type="video/mp4">Video belum dapat diputar di browser ini.</video><p class="muted"><b>Video kontekstual:</b> dari NH₃ + H⁺ → NH₄⁺ menuju contoh nitrogen dalam tanah dan pertanian.</p></div>
+  <div class="box b4"><button class="small-audio" onclick="speakVideoExplanation()">▶ Dengarkan penjelasan ringkas</button></div>
+  <div class="box b5"><p><b>Sesuai isi video:</b> NH₃ bertindak sebagai donor pasangan elektron, H⁺ sebagai akseptor, lalu terbentuk NH₄⁺. Dalam konteks pertanian, NH₄⁺ merupakan salah satu bentuk nitrogen yang dapat dijumpai di tanah dan digunakan dalam beberapa jenis pupuk nitrogen.</p></div>
+  <div class="box b6 particle-tags"><span>NH₄⁺</span><span>H₃O⁺</span><span>BF₃/NH₃</span></div>
+ </div>
+<div class="slide-step"><span>Langkah 7 dari 11</span><button class="next-step" onclick="goStep(8)">Hubungkan dengan Kehidupan →</button></div>
+</section>
+
+<!-- SLIDE 8 -->
+<section id="kehidupan" class="story-slide white-slide">
+ <div class="story-grid s8">
+  <div class="box b1"><h2>Hubungkan dengan kehidupan</h2></div>
+  <div class="box b2"><h3>Asam dan basa</h3><p>NH₃ menyumbangkan pasangan elektron, sedangkan H⁺ menerimanya. Inilah contoh reaksi asam–basa Lewis.</p></div>
+  <div class="box b3"><h3>Ion dalam larutan</h3><p>Hasilnya adalah NH₄⁺, yaitu ion amonium. Ion ini dapat berada dalam larutan dan juga menjadi salah satu bentuk nitrogen di tanah.</p></div>
+  <div class="box b4"><h3>Kimia di sekitar kita</h3><p>Dalam pertanian, nitrogen dalam bentuk amonium menjadi bagian dari pengelolaan nutrisi tanaman. Contohnya terkait pupuk nitrogen tertentu.</p></div>
+ </div>
+<div class="slide-step"><span>Langkah 8 dari 11</span><button class="next-step" onclick="goStep(9)">Lanjut ke Latihan →</button></div>
+</section>
+
+<!-- SLIDE 9 -->
+<section id="latihan" class="story-slide dark-slide">
+ <div class="story-grid s9">
+  <div class="box b1"><span class="section-no">05 • LATIHAN CEPAT</span></div>
+  <div class="box b2"><h2>Cek Pemahaman Sebelum Kuis</h2></div>
+  <div class="box b3"><p>Pilih jawaban yang paling tepat. Umpan balik muncul langsung.</p></div>
+  <div class="box b4 practice" id="practice"></div>
+  <div class="box b5"><label>Alasan jawabanmu</label><textarea id="alasan" placeholder="Tuliskan alasan singkat..." oninput="saveReason()"></textarea><small id="reasonSaved"></small></div>
+ </div>
+<div class="slide-step"><span>Langkah 9 dari 11</span><button class="next-step" onclick="goStep(10)">Lanjut ke Kuis →</button></div>
+</section>
+
+<!-- SLIDE 10 -->
+<section id="kuis" class="story-slide white-slide">
+ <div class="story-grid s10">
+  <div class="box b1"><span class="section-no">06 • KUIS AKHIR</span></div>
+  <div class="box b2"><h2>Uji Pemahamanmu</h2></div>
+  <div class="box b3"><p>Kerjakan 8 soal. Jawab satu per satu dan lihat skor berjalan.</p></div>
+  <div class="box b4"><strong id="quizIndicator">Soal 1 dari 8</strong><span id="quizScore">Skor: 0</span></div>
+  <div class="box b5" id="quizArea"></div>
+  <div class="box b6"><button id="nextQuiz" onclick="nextQuiz()">Soal Berikutnya</button></div>
+ </div>
+<div class="slide-step"><span>Langkah 10 dari 11</span><button class="next-step" onclick="goStep(11)">Lihat Ringkasan →</button></div>
+</section>
+
+<!-- SLIDE 11 -->
+<section id="ringkasan" class="story-slide dark-slide">
+ <div class="story-grid s11">
+  <div class="box b1"><span class="section-no">07 • RINGKASAN</span></div>
+  <div class="box b2"><h2>One-Minute Review</h2></div>
+  <div class="box b3 summary-cards"><article>Ikatan kovalen</article><article>Donor</article><article>Akseptor</article><article>NH₃ + H⁺ → NH₄⁺</article></div>
+  <div class="box b4"><h3>Kesalahan yang sering terjadi</h3><ul><li>Mengira panah menunjukkan arah perpindahan atom.</li><li>Mengira donor adalah penerima pasangan elektron.</li><li>Lupa bahwa pasangan elektron berasal dari donor.</li></ul></div>
+  <div class="box b5"><h3>Pertanyaan refleksi</h3><p>Kembali ke pertanyaan awal: dari mana pasangan elektron itu berasal?</p><textarea id="refleksi" placeholder="Tulis refleksimu..."></textarea></div>
+  <div class="box b6"><button onclick="saveReflection()">Simpan refleksi</button><span id="saved"></span></div>
+  <div class="box b7 footer-box"><span>CHEM-BOND • Ikatan Kovalen Koordinasi</span><button class="linkbtn" onclick="scrollTo({top:0,behavior:'smooth'})">↑ Kembali ke atas</button></div>
+ </div>
+<div class="slide-step"><span>Langkah 11 dari 11</span><button class="next-step" onclick="goStep(1)">↑ Kembali ke Beranda</button></div>
+</section>
+</main>
+<div class="source-note">Materi kimia dirancang untuk menekankan asal pasangan elektron: donor → akseptor. Contoh utama: NH₃ + H⁺ → NH₄⁺.</div>
+<script src="script.js"></script>
+</body>
+</html>
